@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div id="header_gradient">
+            <h1 id="time" class="time_stats">00:00</h1>
+            <h3 id="date" class="time_stats">Day, Month 00</h3>
+        </div>
+    </header>
+
+    <main id="main_container">
+        <section id="list_container">
+            <div id="account_container">
+                <div id="account_profile"></div>
+                <i id="edit_user_btn" title="Edit Profile"></i>
+                <div id="user_container">
+                    <p id="greetings">Greetings</p>
+                    <b id="username">UserName</b>
+                </div>
+                <!-- <label for="menu_btn_checkbox" id="menu_btn" class="i icon_btns" title="Menu">&#xe700;<input type="checkbox" id="menu_btn_checkbox" name="menu_btn_checkbox"></label> -->
+            </div>
+
+            <div class="line_divider"></div>
+            <div id="list_dsp_container">
+                <div class="empty_container">List display here</div>
+            </div>
+            <div class="line_divider"></div>
+            <div id="list_footer_container">
+                <div class="list_footer_group">
+                    <button type="button" id="add_list_btn" onclick="createList()">Add a list</button>
+                </div>
+            </div>
+        </section>
+
+        <!--#################-->
+        <!--##             ##-->
+        <!--##   Divider   ##-->
+        <!--##             ##-->
+        <!--#################-->
+
+        <section id="todo_container">
+            <p class="empty_container">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="3"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> 
+                        <g id="list-square" transform="translate(-2 -2)"> <rect id="secondary" fill="#2ca9bc" width="18" height="18" rx="1" transform="translate(3 3)"></rect> 
+                            <line id="primary-upstroke" x2="0.1" transform="translate(7.45 8)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></line> 
+                            <line id="primary-upstroke-2" data-name="primary-upstroke" x2="0.1" transform="translate(7.45 12)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></line> 
+                            <line id="primary-upstroke-3" data-name="primary-upstroke" x2="0.1" transform="translate(7.45 16)" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></line> 
+                            <path id="primary" d="M12,8h5m-5,4h5m-5,4h5M3,4V20a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path> 
+                        </g>
+                    </g>
+                </svg> Start listing your to do and be productive.
+                <button type="button" id="add_list_btn2" onclick="createList()">Create new list</button>
+            </p>
+            
+        </section>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" id="change_back" onclick="changeBackground()" title="Change Background">
+        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/>
+    </svg>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
